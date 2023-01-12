@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+body {
+    background: url(background.jpg);
+}
+
+.main {
+    max-width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+
+#whiteLine {
+    background-color: white;
+    width: 60%;
+    height: 0.3em;
+    margin: auto;
+    margin-bottom: 1.5em;
+    margin-top: -2.2em;
+}
+
+.navBar {
+    padding: 1em;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.navBar ul li {
+    list-style: none;
+    float: left;
+    margin-left: 2em;
+}
+
+.navBar a {
+    list-style: none;
+    color: white;
+    font-weight: bold;
+}
+
+.navBar a:hover{
+    color:rgb(149, 0, 168);
+}
+
+.hero h1{
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+
+.left-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    text-align: center;
+    color: white;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.left-col img {
+    width: 375px;
+    height: 250px;
+    margin: auto;
+}
+
+.contactForm {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: white;
+        margin: 1em 4em 1em 4em;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 1em;
+        border: white solid 1px;
+        border-radius: 1em;
+}
+
+.contactForm input, textarea{
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.contactForm label {
+    margin: 5px;
+}
+
+.contactForm button {
+    margin: auto;
+    margin-top: 1em;
+    color: white;
+    background-color: rgb(149, 0, 168);
+    width: 35%;
+    height: 2.0em;
+    border-radius: 50em;
+    cursor: pointer;
+}
+
+.contactForm button:hover{
+    background-color: rgb(216, 0, 245);
+}
+
+
+@media only screen and (min-width: 768px) {
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero p {
+        font-size: 20px;
+        margin-right: 5em;
+    }
+            
+    .container {
+        padding-top: 5em;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .right-col {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .left-col img {
+        width: 550px;
+        height: 470px;
+        margin: auto;
+    }
+
+    .contactForm {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: white;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 1em;
+        border: white solid 1px;
+        border-radius: 1em;
+        height: 25em;
+        margin-left: -1.5em;
+        width: 25em;
+}
+
+.contactForm textarea {
+    height: 20em;
+}
+
+.contactForm input {
+    height: 2em;
+}
+
+}
